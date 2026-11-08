@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Naslov i opis se vide na Googleu i kad podijeliš link -->
+  <title>ajdin.j – Web stranice i IT podrška</title>
+  <meta name="description" content="Moderne web stranice i IT podrška za male biznise u BiH. Brzo, jasno i po pristupačnoj cijeni.">
+  <meta property="og:title" content="ajdin.j – Web stranice i IT podrška">
+  <meta property="og:description" content="Moderne web stranice i IT podrška za male biznise.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23c6ff3d'/><text x='50' y='68' font-size='56' font-family='Arial' font-weight='700' text-anchor='middle' fill='%230a0a0b'>A</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVIGACIJA ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo">ajdin<span>.</span>j</a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#usluge">Usluge</a>
+        <a href="#projekti">Projekti</a>
+        <a href="#o-meni">O meni</a>
+        <a href="#proces">Kako radim</a>
+        <a href="#kontakt" class="btn btn--small">Kontakt</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow reveal"><span class="dot"></span> Slobodan za nove projekte</p>
+
+        <h1 class="hero__title reveal">
+          Web stranice<br>
+          koje <span class="accent">donose</span><br>
+          klijente.
+        </h1>
+
+        <p class="hero__text reveal">
+          Pravim moderne, brze stranice za male biznise i brinem da im tehnika radi
+          bez problema. Vi radite svoj posao, a ja se brinem o ostalom.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#kontakt" class="btn">Zatraži besplatnu ponudu →</a>
+          <a href="#projekti" class="btn btn--ghost">Pogledaj radove</a>
+        </div>
+
+        <div class="hero__stats reveal">
+          <div><strong data-count="48">0</strong><span>sati do prve verzije</span></div>
+          <div><strong data-count="100" data-suffix="%">0</strong><span>prilagođeno mobitelu</span></div>
+          <div><strong data-count="0" data-suffix=" KM">0</strong><span>ako niste zadovoljni</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRAKA ================= -->
+    <div class="marquee-wrap">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Web stranice</span><span>✦</span><span>Landing stranice</span><span>✦</span>
+          <span>Online meni</span><span>✦</span><span>Galerije</span><span>✦</span>
+          <span>IT podrška</span><span>✦</span><span>Mreže i backup</span><span>✦</span>
+          <span>Web stranice</span><span>✦</span><span>Landing stranice</span><span>✦</span>
+          <span>Online meni</span><span>✦</span><span>Galerije</span><span>✦</span>
+          <span>IT podrška</span><span>✦</span><span>Mreže i backup</span><span>✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= USLUGE ================= -->
+    <section class="section" id="usluge">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">01 — Usluge</p>
+          <h2>Šta mogu uraditi za vas</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">◐</div>
+            <h3>Landing stranica</h3>
+            <p>Jedna moćna stranica koja jasno kaže ko ste, šta nudite i kako vas kontaktirati.
+               Idealno za početak.</p>
+            <ul>
+              <li>Jedna stranica, više sekcija</li>
+              <li>Dugme za poziv i WhatsApp</li>
+              <li>Gotova za 2–3 dana</li>
+            </ul>
+            <!-- Cijene mijenjaš ovdje po svom -->
+            <p class="card__price">od <strong>150 KM</strong></p>
+          </article>
+
+          <article class="card card--featured reveal">
+            <span class="badge">Najtraženije</span>
+            <div class="card__icon">✦</div>
+            <h3>Web stranica za biznis</h3>
+            <p>Kompletna stranica: ponuda ili meni, galerija, lokacija na mapi i kontakt.
+               Izgleda odlično na svakom ekranu.</p>
+            <ul>
+              <li>Do 5 stranica ili sekcija</li>
+              <li>Galerija i Google mapa</li>
+              <li>Pomoć oko domene i hostinga</li>
+            </ul>
+            <p class="card__price">od <strong>300 KM</strong></p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">⚙</div>
+            <h3>IT podrška za male firme</h3>
+            <p>Računari, mreža, printeri, Wi-Fi i backup. Postavim sve kako treba
+               i ostanem dostupan kad zapne.</p>
+            <ul>
+              <li>Postavljanje računara i opreme</li>
+              <li>Wi-Fi, mreža i redovni backup</li>
+              <li>Održavanje po dogovoru</li>
+            </ul>
+            <p class="card__price">od <strong>50 KM</strong> / intervencija</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJEKTI ================= -->
+    <section class="section section--alt" id="projekti">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow">02 — Projekti</p>
+            <h2>Odabrani radovi</h2>
+          </div>
+          <p class="section__note">Demo projekti napravljeni da pokažu stil i mogućnosti.
+             Vaš biznis može izgledati ovako već sljedeće sedmice.</p>
+        </div>
+
+        <div class="works">
+          <!-- Svaki projekat je jedan <article class="work">.
+               Kad imaš pravi screenshot, umjesto <div class="thumb ...">...</div> stavi:
+               <img class="work__img" src="img/ime-slike.jpg" alt="Opis"> -->
+
+          <!-- 1. Kafić -->
+          <article class="work reveal">
+            <div class="thumb thumb--cafe">
+              <div class="thumb__nav"><b>Mahala</b><i></i><i></i><i></i></div>
+              <div class="thumb__title">Kafa kao<br>kod kuće.</div>
+              <div class="thumb__btn">Pogledaj meni</div>
+              <div class="thumb__art">☕</div>
+            </div>
+            <div class="work__body">
+              <div class="tags"><span>Kafić</span><span>Online meni</span></div>
+              <h3>Kafić Mahala</h3>
+              <p>Topla, jednostavna stranica s menijem, radnim vremenom i lokacijom na mapi.</p>
+            </div>
+          </article>
+
+          <!-- 2. Auto servis -->
+          <article class="work reveal">
+            <div class="thumb thumb--auto">
+              <div class="thumb__nav"><b>BRZI KLJUČ</b><i></i><i></i><i></i></div>
+              <div class="thumb__title">Servis bez<br>čekanja.</div>
+              <div class="thumb__btn">📞 Pozovi odmah</div>
+              <div class="thumb__art">🔧</div>
+            </div>
+            <div class="work__body">
+              <div class="tags"><span>Auto servis</span><span>Landing</span></div>
+              <h3>Auto servis Brzi Ključ</h3>
+              <p>Landing stranica s cjenovnikom usluga i pozivom jednim klikom s mobitela.</p>
+            </div>
+          </article>
+
+          <!-- 3. Apartmani -->
+          <article class="work reveal">
+            <div class="thumb thumb--apart">
+              <div class="thumb__nav"><b>Vidik</b><i></i><i></i><i></i></div>
+              <div class="thumb__title">Pogled koji<br>se pamti.</div>
+              <div class="thumb__btn">Pošalji upit</div>
+              <div class="thumb__art">⛰</div>
+            </div>
+            <div class="work__body">
+              <div class="tags"><span>Apartmani</span><span>BS / EN</span></div>
+              <h3>Apartmani Vidik</h3>
+              <p>Galerija apartmana, cijene po sezoni i upit za boravak, na bosanskom i engleskom.</p>
+            </div>
+          </article>
+
+          <!-- 4. Pekara -->
+          <article class="work reveal">
+            <div class="thumb thumb--bakery">
+              <div class="thumb__nav"><b>Zlatno zrno</b><i></i><i></i><i></i></div>
+              <div class="thumb__title">Svježe,<br>svako jutro.</div>
+              <div class="thumb__btn">Ponuda dana</div>
+              <div class="thumb__art">🥐</div>
+            </div>
+            <div class="work__body">
+              <div class="tags"><span>Pekara</span><span>Mobile-first</span></div>
+              <h3>Pekara Zlatno zrno</h3>
+              <p>Ponuda s cijenama, radno vrijeme i narudžba torti preko WhatsAppa.</p>
+            </div>
+          </article>
+
+          <!-- 5. Fitness trener -->
+          <article class="work reveal">
+            <div class="thumb thumb--fit">
+              <div class="thumb__nav"><b>FIT/AMAR</b><i></i><i></i><i></i></div>
+              <div class="thumb__title">Jači svake<br>sedmice.</div>
+              <div class="thumb__btn">Izaberi paket</div>
+              <div class="thumb__art">⚡</div>
+            </div>
+            <div class="work__body">
+              <div class="tags"><span>Lični trener</span><span>Paketi</span></div>
+              <h3>Personalni trener Amar</h3>
+              <p>Energična stranica s paketima treninga, rezultatima klijenata i brzom prijavom.</p>
+            </div>
+          </article>
+
+          <!-- 6. Portfolio -->
+          <article class="work reveal">
+            <div class="thumb thumb--me">
+              <div class="thumb__nav"><b>ajdin.j</b><i></i><i></i><i></i></div>
+              <div class="thumb__title">Web stranice<br>koje donose<br>klijente.</div>
+              <div class="thumb__btn">Kontakt</div>
+            </div>
+            <div class="work__body">
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Ova stranica</h3>
+              <p>Napravljena od nule, bez gotovih šablona. Animacije i kontakt preko WhatsAppa.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="works__cta reveal">
+          <p>Vaš biznis bi trebao biti sljedeći?</p>
+          <a href="#kontakt" class="btn">Javite se →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= O MENI ================= -->
+    <section class="section" id="o-meni">
+      <div class="container about">
+        <div class="reveal">
+          <p class="eyebrow">03 — O meni</p>
+          <h2>Iza svakog projekta<br><span class="accent">stoji iskustvo.</span></h2>
+        </div>
+        <div class="about__body">
+          <p class="reveal">Zovem se <strong>Ajdin</strong> i dolazim iz Sarajeva. Već nekoliko godina radim
+             u IT-u. Svaki dan se brinem o računarima, mrežama i serverima, i o tome da ljudi
+             mogu raditi bez prekida.</p>
+          <p class="reveal">Isti pristup donosim u svaki projekat: <strong>jasan dogovor, pouzdan rezultat
+             i rok koji se poštuje</strong>. Bez komplikovanja i bez stručnih izraza koje niko ne razumije.</p>
+
+          <div class="values">
+            <div class="value reveal">
+              <h3>Brzo</h3>
+              <p>Prvu verziju vidite za 48 sati.</p>
+            </div>
+            <div class="value reveal">
+              <h3>Jasno</h3>
+              <p>Cijena i rok dogovoreni unaprijed.</p>
+            </div>
+            <div class="value reveal">
+              <h3>Lokalno</h3>
+              <p>Sarajevo. Možemo se naći uživo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCES ================= -->
+    <section class="section section--alt" id="proces">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">04 — Kako radim</p>
+          <h2>Jednostavno, u 4 koraka</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__num">01</span>
+            <h3>Razgovor</h3>
+            <p>Kratko se čujemo i kažete mi šta vam treba. Besplatno i bez obaveze.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__num">02</span>
+            <h3>Ponuda</h3>
+            <p>Dobijete jasnu cijenu i rok, napisane crno na bijelo. Bez skrivenih troškova.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__num">03</span>
+            <h3>Izrada</h3>
+            <p>Prvu verziju vidite brzo i tražite izmjene dok ne bude kako treba.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__num">04</span>
+            <h3>Predaja</h3>
+            <p>Stranicu puštam na internet, pokažem vam kako se koristi i ostajem dostupan.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PITANJA ================= -->
+    <section class="section" id="pitanja">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="eyebrow">05 — Pitanja</p>
+          <h2>Česta pitanja</h2>
+        </div>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>Koliko traje izrada stranice?</summary>
+            <p>Jednostavna stranica je gotova za nekoliko dana. Prvu verziju obično vidite već za 48 sati.</p>
+          </details>
+          <details class="reveal">
+            <summary>Šta ako mi se ne svidi?</summary>
+            <p>Mijenjamo dok ne bude kako želite. Ako ni nakon toga niste zadovoljni, ne plaćate.</p>
+          </details>
+          <details class="reveal">
+            <summary>Trebam li ja nešto znati o tehnici?</summary>
+            <p>Ne. Vi mi kažete šta vam treba, a ja se brinem o svemu ostalom: domeni, hostingu i postavljanju.</p>
+          </details>
+          <details class="reveal">
+            <summary>Koliko košta domena i hosting?</summary>
+            <p>Obično 50–150 KM godišnje, zavisno od toga šta vam treba. Pomoći ću vam da izaberete najpovoljnije.</p>
+          </details>
+          <details class="reveal">
+            <summary>Da li mogu kasnije sam mijenjati sadržaj?</summary>
+            <p>Da. Pokazat ću vam kako promijeniti tekst, cijene ili slike, a za veće izmjene sam tu.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAKT ================= -->
+    <section class="section section--alt contact" id="kontakt">
+      <div class="container contact__grid">
+        <div class="reveal">
+          <p class="eyebrow">06 — Kontakt</p>
+          <h2>Imate ideju?<br><span class="accent">Hajde da je napravimo.</span></h2>
+          <p class="contact__text">Napišite par rečenica o svom biznisu i šta vam treba.
+             Odgovaram isti dan.</p>
+
+          <div class="contact__direct">
+            <!-- broj u data-phone pišeš bez + i razmaka; email u href i u data-email na formi -->
+            <a class="btn" id="waBtn" data-phone="38763545020" href="#">WhatsApp</a>
+            <a class="btn btn--ghost" href="mailto:ajdinjasarevic99@hotmail.com">Email</a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm" data-email="ajdinjasarevic99@hotmail.com" novalidate>
+          <label>
+            Ime
+            <input type="text" name="ime" placeholder="Vaše ime" required>
+          </label>
+          <label>
+            Biznis
+            <input type="text" name="biznis" placeholder="npr. Kafić Mahala, Sarajevo">
+          </label>
+          <label>
+            Šta vam treba?
+            <select name="usluga">
+              <option>Landing stranica</option>
+              <option>Web stranica za biznis</option>
+              <option>IT podrška</option>
+              <option>Nisam siguran/na</option>
+            </select>
+          </label>
+          <label>
+            Poruka
+            <textarea name="poruka" rows="4" placeholder="Ukratko opišite šta želite…" required></textarea>
+          </label>
+          <div class="form__actions">
+            <button type="submit" class="btn" data-via="wa">Pošalji na WhatsApp</button>
+            <button type="submit" class="btn btn--ghost" data-via="mail">Pošalji emailom</button>
+          </div>
+          <p class="form__msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> ajdin.j · Sarajevo</span>
+      <a href="#" class="to-top">Nazad na vrh ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
